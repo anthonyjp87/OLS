@@ -1,5 +1,7 @@
 package ols
 
+//This function accepts two arrays (slices) a dependent and an independent variable. It returns the coefficients for a line of best fit given the Ordinary Least Squares Method as well as the R^2 value.
+
 func reg(x, y []float64) (float64, float64, float64) {
 
 	beta := (sum(multiply(dif(x), dif(y))) / sum(square(dif(x))))
